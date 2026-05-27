@@ -1,0 +1,6 @@
+{
+  "name": "Road to RRB JE (CBT-1)",
+  "description": "A highly optimized AMOLED Dark Mode study companion for the RRB JE CBT-1 non-technical syllabus with a 400-day microscopic tracking dashboard, interactive Syllabus Selector, Spaced Repetition Study Vault, procedural revision test series, custom playlists, and a server-side Gemini AI workspace agent.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

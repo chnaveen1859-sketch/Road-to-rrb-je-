@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+}
+
+/* Custom glow animations for AMOLED style highlights */
+.glow-blue {
+  box-shadow: 0 0 15px rgba(0, 229, 255, 0.2);
+}
+
+.glow-green {
+  box-shadow: 0 0 15px rgba(16, 185, 129, 0.2);
+}
+
+/* Hide scrollbars for aesthetic flow but preserve native scroll mechanics */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Subtle fluid bounce on hover for placeholders and interactive cards */
+.hover-subtle-bounce {
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.hover-subtle-bounce:hover {
+  animation: subtle-bounce-anim 0.8s ease-in-out infinite;
+}
+
+@keyframes subtle-bounce-anim {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-4px);
+  }
+}
+
+
